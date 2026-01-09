@@ -34,44 +34,61 @@
 </head>
 <body>
 <!-- NavBar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5 border-primary" style="border-color: #0c4984 !important;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5" style="border-color:#0c4984;">
   <div class="container-fluid">
-    <a class="navbar-brand col-sm-3" href="index.html"><img src="OBMC_Logo_wtitle.webp" style="width: 100%; height: auto;"></a>
+    <a class="navbar-brand col-sm-3" href="index.html">
+      <img src="OBMC_Logo_wtitle.webp" class="img-fluid" alt="OBMC Logo">
+    </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse col-sm-4" id="mynavbar">
-      <ul class="navbar-nav me-auto">
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="about_developers.html">About Developers</a>
+          <a class="nav-link" href="about_developers.html">About Developers</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="student_life.html">Student Life</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="campuses.html">Campuses</a>
+
+        <!-- Campuses dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Campuses
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="angeles.html">Angeles</a></li>
+            <li><a class="dropdown-item" href="greenhills.html">Greenhills</a></li>
+            <li><a class="dropdown-item" href="fairview.html">Fairview</a></li>
+            <li><a class="dropdown-item" href="sta_ana.html">Sta. Ana</a></li>
+            <li><a class="dropdown-item" href="las_pinas.html">Las Piñas</a></li>
+          </ul>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="enroll_now.html">Enroll Now</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="contact_us.html">Contact Us</a>
         </li>
+
       </ul>
 
-      <div class="d-flex">
-        <button class="btn float-end rounded-5 text-light px-4 py-3" type="button" style="background-color: #0c4984; font-size: 12px;">
-        <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/" class="link-light link-underline link-underline-opacity-0">
-          My Portal
-        </a>
-        </button>
-      </div>
+      <button class="btn rounded-5 text-light px-4 py-3" style="background-color:#0c4984;">
+        <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/" class="text-white text-decoration-none">My Portal</a>
+      </button>
     </div>
+  </div>
+</nav>
   </div>
 </nav>
 
