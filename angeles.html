@@ -46,12 +46,12 @@
       background-color: #093b68;
     }
     .name-container {
-    display: flex;       /* This puts items side-by-side /
-    display: flex; 
+    display: flex;       /* This puts items side-by-side */
     justify-content: center;
-    gap: 15px;           / Adds space between the two boxes /
-    margin-bottom: 15px; / Adds space below the row /
-    }
+    gap: 15px;           /* Adds space between the boxes */
+    margin-bottom: 15px; /* Adds space below the row */
+}
+
 
     .name-container input {
     flex: 1;             / This makes both boxes equal width */
@@ -65,17 +65,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5" style="border-color:#0c4984;">
   <div class="container-fluid">
 
-    
     <a class="navbar-brand col-sm-3" href="index.html">
       <img src="OBMC_Logo_wtitle.webp" class="img-fluid" alt="OBMC Logo">
     </a>
 
-    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -91,28 +88,20 @@
           <a class="nav-link" href="student_life.html">Student Life</a>
         </li>
 
-        <!-- Campuses dropdown (NO href = NO 404) -->
+        <!-- ✅ WORKING DROPDOWN -->
         <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Campuses
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="angeles.html">Angeles</a></li>
-                        <li><a class="dropdown-item" href="greenhills.html">Greenhills</a></li>
-                        <li><a class="dropdown-item" href="fairview.html">Fairview</a></li>
-                        <li><a class="dropdown-item" href="sta_ana.html">Sta. Ana</a></li>
-                        <li><a class="dropdown-item" href="las_pinas.html">Las Piñas</a></li>
-                    </ul>
-                </li>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Campuses
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="angeles.html">Angeles</a></li>
+            <li><a class="dropdown-item" href="greenhills.html">Greenhills</a></li>
+            <li><a class="dropdown-item" href="fairview.html">Fairview</a></li>
+            <li><a class="dropdown-item" href="sta_ana.html">Sta. Ana</a></li>
+            <li><a class="dropdown-item" href="las_pinas.html">Las Piñas</a></li>
+          </ul>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="enroll_now.html">Enroll Now</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact_us.html">Contact Us</a>
-                </li>
-            </ul>
         <li class="nav-item">
           <a class="nav-link" href="enroll_now.html">Enroll Now</a>
         </li>
@@ -123,14 +112,13 @@
 
       </ul>
 
-      
       <button class="btn rounded-5 text-light px-4 py-3" style="background-color:#0c4984;">
         My Portal
       </button>
     </div>
   </div>
-</div>
 </nav>
+
 
 <br><br>
 
@@ -228,3 +216,5 @@ class="" style="width: 9%; height: auto;">
 </body>
 </html>
 
+
+    
