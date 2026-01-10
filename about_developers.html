@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font for everything -->
-    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O.B. Montessori Center | About Developers</title>
 
-    <style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
        body{
         font-family: Zalando Sans, sans-serif;
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgcIDqr6dPuF-mssrJlNM1UsPajZW8_akZQ&s');
+        background-image: url('OBMC_Background.jpg');
         background-size: cover;
-        background-position: right;
+        background-position:center;
         background-repeat: no-repeat;
        }
+
+       .image-container{
+        justify-content: center; /* Centers horizontally */
+        display: flex;
+       }
+
+    .name-container {
+    flex: 1;             /* This makes both boxes equal width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
 
        #logo{
         height: 45px;
@@ -26,7 +37,7 @@
         display: flex;
        }
 
-     #form-box{
+       #form-box2{
         background: rgb(255, 255, 255, 0.5);
         padding: 3vw;
         border-radius: 2vw;
@@ -35,338 +46,182 @@
         margin:auto;
     }
 
-     label {
-        display: block;
-        margin: 1vw 0 0.5vw;
-        font-size: 1rem;
-        color: #333;
-    }
-
-    input[type="text"], input[type="email"], input[type="number"], input[type="submit"], textarea, select {
-        width: 100%;
-        padding: 1.2vw;
-        margin: 0.8vw 0 1.5vw;
-        border-radius: 0.8vw;
-        border: 1px solid #ccc;
-        font-size: 1rem;
-    }
-
-    input[type="submit"] {
-        background-color: #2e8b57;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 1.1rem;
-        transition: background-color 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-  background-color: #3cb371;
-    }
-
-    textarea {
-        resize: vertical;
-        min-height: 15vw;
-    }
-
-    ul.navbar {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        background: #343a40;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 10vw;
-    }
-
-    ul.navbar li {
-        margin: 0;
-    }
-
-    ul.navbar li a {
-        margin: 0 1vw;
-        color: black;
-        padding: 0;
-        display: block;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-        .name-container {
-    display: flex;       /* This puts items side-by-side */
-    display: flex; 
-    justify-content: center;
-    gap: 15px;           /* Adds space between the two boxes */
-    margin-bottom: 15px; /* Adds space below the row */
-    }
-
-    .name-container input {
-    flex: 1;             /* This makes both boxes equal width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    }
-
-            .name-container2 {
-    display: flex;       /* This puts items side-by-side */
-    display: flex; 
-    justify-content: center;
-    gap: 15px;           /* Adds space between the two boxes */
-    margin-bottom: 15px; /* Adds space below the row */
-    }
-
-    .name-container2 input {
-    flex: 1;             /* This makes both boxes equal width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    }
-
-            .name-container3 {
-    display: flex;       /* This puts items side-by-side */
-    display: flex; 
-    justify-content: center;
-    gap: 15px;           /* Adds space between the two boxes */
-    margin-bottom: 15px; /* Adds space below the row */
-    }
-
-    .name-container3 input {
-    flex: 1;             /* This makes both boxes equal width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    }
-
-    .name-container4 {
-    display: flex;       /* This puts items side-by-side */
-    display: flex; 
-    justify-content: center;
-    gap: 15px;           /* Adds space between the two boxes */
-    margin-bottom: 15px; /* Adds space below the row */
-    }
-
-    .name-container4 input {
-    flex: 1;             /* This makes both boxes equal width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    }
-
-    .name-container5 {
-    display: flex;       /* This puts items side-by-side */
-    display: flex; 
-    justify-content: center;
-    gap: 15px;           /* Adds space between the two boxes */
-    margin-bottom: 15px; /* Adds space below the row */
-    }
-
-    .name-container5 input {
-    flex: 1;             /* This makes both boxes equal width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    }
     
-    </style>
-
+       
+    section {
+      padding: 30px;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      color: #333;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    #leader { background-color: #ffd966; }
+    #dev1 { background-color: #c9daf8; }
+    #dev2 { background-color: #d9ead3; }
+    #dev3 { background-color: #f4cccc; }
+    #dev4 { background-color: #fce5cd; }
+    #dev5 { background-color: #d0e0e3; }
+  </style>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5 border-primary" style="border-color: #0c4984 !important;">
-  <div class="container-fluid">
 
-    <a class="navbar-brand col-sm-3" href="index.html"><img src="OBMC_Logo_wtitle.webp" style="width: 100%; height: auto;"></a>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5 border-primary" style="border-color:#0c4984 !important;">
+    <div class="container-fluid">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse col-sm-4" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-            <div class="collapse navbar-collapse col-sm-4" id="mynavbar">
+        <a class="navbar-brand col-sm-3" href="index.html">
+            <img src="OBMC_Logo_wtitle.webp" style="width:100%; height:auto;">
+        </a>
 
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="course_offers.html">Course Offers</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="about_developers.html">About Developers</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="student_life.html">Student Life</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="campuses.html">Campuses</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="enroll_now.html">Enroll Now</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
-      </ul>
-
-      <div class="d-flex">
-        <button class="btn float-end rounded-5 text-light px-4 py-3" type="button" style="background-color: #0c4984; font-size: 15px;">
-            My Portal
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-  </div>
-</nav>
 
-<br><br>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+<div class="collapse navbar-collapse col-sm-4" id="mynavbar">
+      
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_developers.html">About Developers</a>
+        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student_life.html">Student Life</a>
+                </li>
 
-<div id="form-box" style="width:100%;">
-    <form>
-<div class="container">
-    <h1 class="text- text-center" style="color:rgb(2, 74, 132);"><strong>Student Life</strong></h1>
-
-    <h3 class="text-center"><strong>Extracurricular Activities</strong></h3>
-    <br>
-    <h5 class="text-center">Our extracurricular activities at O.B. Montessori Center <kbd>support the development of our students’ personalities</kbd> so they grow up confident, productive, and disciplined.</h5>
-  </div>
-    <br></div>
-</form>
-<br><br>
-    
-
-    <div id="form-box" style="width:100%;">
-    <form>
-<div class="container">
-    <h1 class="text-center" style="color:rgb(2, 74, 132);"><strong>Camping</strong></h1>
-    <br>
-    <h5 class="text-center">In our camping programs, students immerse in nature to <kbd>build resilience, work in teams, and develop leadership skills</kbd> through outdoor survival training activities. </h5>
-    <br>
-<div class="name-container text-center">
-    <img style="width:500px; height:400px; border-radius:20px; margin-left:30px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/cd1414fc-5da4-483d-9a22-8f1d9da31b19/O.B.+Montessori+Center%2C+Outdoor+Camping+Event?format=2500w">
-
-    <img style="width:500px; height:400px;  border-radius:20px; margin-left:50px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/c63a8b00-9ea1-4c29-8f41-a3e930162794/O.B.+Montessori+Center%2C+Outdoor+Night+Camping+Event?format=2500w">
-  </div>
-  </div>
-    <br></div>
-</form>
-<br><br>
-
-<div id="form-box" style="width:100%;">
-    <form>
-<div class="container2">
-    <h1 class="text-center" style="color:rgb(2, 74, 132);"><strong>Visual Arts</strong></h1>
-    <br>
-    <h5 class="text-center">Our arts programs <kbd>encourage creativity and self-expression</kbd> in students by allowing them to explore various mediums and showcase their work in school exhibits.</h5>
-    <br>
-<div class="name-container text-center">
-    <img style="width:500px; height:400px; border-radius:20px; margin-left:30px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/275256af-208d-4f06-ba76-2712858189cf/O.B+Montessori+Center%2C+High+School+Art+Exhibit?format=2500w">
-
-    <img style="width:500px; height:400px;  border-radius:20px; margin-left:50px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/275256af-208d-4f06-ba76-2712858189cf/O.B+Montessori+Center%2C+High+School+Art+Exhibit?format=2500w">
-  </div>
-  </div>
-    <br></div>
-</form>
-<br><br>
-
-<div id="form-box" style="width:100%;">
-    <form>
-<div class="container3">
-    <h1 class="text-center" style="color:rgb(2, 74, 132);"><strong>Sports</strong></h1>
-    <br>
-    <h5 class="text-center">Physical education and sports are integral parts of our curriculum. We offer a variety of sports programs that <kbd>promote physical fitness, wellness, teamwork, and sportsmanship.</kbd></h5>
-    <br>
-<div class="name-container text-center">
-    <img style="width:500px; height:400px; border-radius:20px; margin-left:30px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/5ae22542-9508-4149-b40b-e8df1cd9f468/O.B.+Montessori+Center%2C+Grade+School+Intermediate+Intramurals?format=2500w">
-
-    <img style="width:500px; height:400px;  border-radius:20px; margin-left:50px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/96660b45-6516-4fad-a7e0-7a9b929cc1d2/O.B+Montessori+Center%2C+Basketball+Intramurals?format=2500w">
-  </div>
-  </div>
-    <br></div>
-</form>
-<br><br>
-
-<div id="form-box" style="width:100%;">
-    <form>
-<div class="container4">
-    <h1 class="text-center" style="color:rgb(2, 74, 132);"><strong>Music</strong></h1>
-    <br>
-    <h5 class="text-center">Our music programs allow students to <kbd>discover and develop their musical abilities,</kbd> from learning instruments to participating in the choir and band.
-
-</kbd></h5>
-    <br>
-<div class="name-container text-center">
-    <img style="width:500px; height:400px; border-radius:20px; margin-left:30px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/5e15b826-60ab-4f1e-943a-b7373bf1be05/O.B+Montessori+Center%2C+Marching+Band?format=2500w">
-
-    <img style="width:500px; height:400px;  border-radius:20px; margin-left:50px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/e9e62a8b-fe54-43e9-9e31-ac4095e05e6e/O.B+Montessori+Center%2C+Rondalla?format=2500w">
-  </div>
-  </div>
-    <br></div>
-</form>
-<br><br>
-
-<div id="form-box" style="width:100%;">
-    <form>
-<div class="container5">
-    <h1 class="text-center" style="color:rgb(2, 74, 132);"><strong>Theater and Dance</strong></h1>
-    <br>
-    <h5 class="text-center">The theater and dance programs of O.B. Montessori Center <kbd>expose the students to the world of the performing arts</kbd> as they work with experts and top talents in professional Philippine theater and dance. These programs <kbd>help build awareness and appreciation of Philippine culture and heritage</kbd> so students experience how the arts affect and benefit society.</kbd></h5>
-    <br>
-
-<div class="name-container text-center">
-    <img style="width:500px; height:400px; border-radius:20px; margin-left:30px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/c0219fe8-2909-482b-aee4-cd975c0a029e/O.B.+Montessori+Center%2C+Theatrical?format=2500w">
-
-    <img style="width:500px; height:400px;  border-radius:20px; margin-left:50px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/2467ca9c-f687-4ef9-b7f0-da05e70561db/O.B.+Montessori+Center%2C+Cultural+Dance?format=2500w">
-  </div>
-  </div>
-    <br></div>
-</form>
-<br><br>
-
-     <footer class="text-light mt-5 p-4" style="background-color: #0c4984;">
-    <div class="container">
-    <div class="row">
-          <div class="col-sm-4">
-              <a href="#mynavbar" class="">
-                <img src="OBMC_Logo.webp" alt="OBMC Logo" class="rounded-circle bg-light p-2" style="width: 55%; height: auto;">
-              </a>
-          </div>
-
-          <div class="col-sm-4">
-              <h5>Contact</h5>
-              <ul class="list-unstyled">
-                  <li>info@obmontessori.edu.ph</li>
-                  <li>+63 2 8722 9720 to 26</li>
-                  <li><a href="about_developers.html" class="text-white">About Developers</a></li>
-                  <li>
-                    <a href="https://www.facebook.com/obmcofficial/"><img src="facebook-icon.png" alt=""
-class="" style="width: 9%; height: auto;">
+                <!-- CAMPUSES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Campuses
                     </a>
-                    <a href="https://www.youtube.com/channel/UCqfx_-uvSz9wJvyQj6KvGFQ"><img src="youtube-icon.png" alt="" class="" style="width: 11%; height: auto;">
-                    </a>
-                    <a href="https://www.instagram.com/obmontessoriofficial?igsh=MXM5YWI5bzAzcHE3aw=="><img src="insta-icon.png" alt="" class="" style="width: 10%; height: auto;">
-                    </a>
-                  </li>
-              </ul>
-          </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="angeles.html">Angeles</a></li>
+                        <li><a class="dropdown-item" href="greenhills.html">Greenhills</a></li>
+                        <li><a class="dropdown-item" href="fairview.html">Fairview</a></li>
+                        <li><a class="dropdown-item" href="sta_ana.html">Sta. Ana</a></li>
+                        <li><a class="dropdown-item" href="las_pinas.html">Las Piñas</a></li>
+                    </ul>
+                </li>
 
-          <div class="col-sm-4">
-              <h5>Campuses Location</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Angeles City, Pampanga</a></li>
-                <li><a href="#" class="text-white">Fairview, Quezon City</a></li>
-                <li><a href="#" class="text-white">Greenhills, San Juan City</a></li>
-                <li><a href="#" class="text-white">B.F. Homes, Las Piñas City</a></li>
-                <li><a href="#" class="text-white">Sta. Ana, Manila City</a></li>
-              </ul>
-          </div>
-    </div>
-        <hr class="bg-light">
-        <div class="text-center">
-            <p>&copy; 2025 ICT9 Q2 Group 5 PROJECT. All rights reserved.</p>
+                <li class="nav-item">
+                    <a class="nav-link" href="enroll_now.html">Enroll Now</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+
+            <div class="d-flex">
+                <button class="btn rounded-5 text-light px-4 py-3" style="background-color:#0c4984;">
+                    My Portal
+                </button>
+            </div>
         </div>
     </div>
+</nav>
+
+<br>
+
+<!-- CONTENT -->
+<br>
+<div id="form-box2" style="width:100%;">
+    <form>
+<div class="container5">
+    
+  <h1 class="text- text-center" style="color:rgb(2, 74, 132);"><strong>About Developers</strong></h1>
+
+    <h3 class="text-center"><strong>Creators of the Redesigned OB Website</strong></h3>
+    <br>
+    <h5 class="text-center">Hello! We are the creators of this OB website. Our goal is to make this the <kbd>better version of the original website</kbd> to serve as it's improvement!</h5>
+
+    <br>
+
+
+    
+<div class="image-container">
+<img style="border-radius: 20px; width: auto; height:400px;" src="Group_Photo.png">
+</div>
+  </div>
+  </div>
+    <br></div>
+</form><br>
+
+
+<section id="leader">
+  <h2><strong>Github Manager: Wenzelvic Paragas</strong></h2>
+  <p><h5>Distributed tasks and supervised all of the pages. Made the Enroll Now Page, and Student Life Page.</h5></p>
+</section>
+
+<section id="dev1">
+  <h2><strong>Developer: Rachel Balasico</strong></h2>
+  <p><h5>Created the Navbar, Base, and the Home Page. Supervised over the designs, and helped with task distribution.</h5></p>
+</section>
+
+<section id="dev2">
+  <h2><strong>Developer: Raina Isidro</strong></h2>
+  <p><h5>Made the courses offer with precise accuracy.</h5></p>
+</section>
+
+<section id="dev3">
+  <h2><strong>Developer: Hanzo Del Rosario</strong></h2>
+  <p><h5>Supervised and made the About Developers page.</h5></p>
+</section>
+
+<section id="dev4">
+  <h2><strong>Developer: Spencer Santillan</strong></h2>
+  <p><h5>Made the Campuses Page.</h5></p>
+</section>
+
+<section id="dev5">
+  <h2><strong>Developer: Parminder Bhullar</strong></h2>
+  <p><h5>Made the About Developers Pade and Contact Us Page.</h5></p>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-light mt-5 p-4" style="background-color: #0c4984;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="OBMC_Logo.webp" class="rounded-circle bg-light p-2" style="width:55%;">
+      </div>
+
+      <div class="col-sm-4">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li>info@obmontessori.edu.ph</li>
+          <li>+63 2 8722 9720 to 26</li>
+          <li><a href="about_developers.html" class="text-white">About Developers</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4">
+        <h5>Campuses Location</h5>
+        <ul class="list-unstyled">
+          <li>Angeles City, Pampanga</li>
+          <li>Fairview, Quezon City</li>
+          <li>Greenhills, San Juan City</li>
+          <li>B.F. Homes, Las Piñas City</li>
+          <li>Sta. Ana, Manila City</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <p class="text-center mb-0">&copy; 2025 ICT9 Q2 Group 5 PROJECT. All rights reserved.</p>
+  </div>
 </footer>
 
-
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
