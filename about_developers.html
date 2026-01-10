@@ -8,10 +8,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    body {
-      background-color: whitesmoke;
-      font-family: Zalando Sans, sans-serif;
-    }
+       body{
+        font-family: Zalando Sans, sans-serif;
+        background-image: url('file:///C:/Users/Wen/Downloads/Untitled%20design%20(5).jpg');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+       }
+
+       .image-container{
+        justify-content: center; /* Centers horizontally */
+        display: flex;
+       }
+
+       #logo{
+        height: 45px;
+        width: 45px;
+       }
+       #mynavbar{
+        justify-content: center;
+        display: flex;
+       }
     section {
       padding: 30px;
       border-radius: 20px;
@@ -54,16 +71,25 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="course_offers.html">Course Offers</a>
-        </li>
-
         <li class="nav-item">
           <a class="nav-link" href="about_developers.html">About Developers</a>
         </li>
                 <li class="nav-item">
                     <a class="nav-link" href="student_life.html">Student Life</a>
+                </li>
+
+                <!-- CAMPUSES DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Campuses
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="angeles.html">Angeles</a></li>
+                        <li><a class="dropdown-item" href="greenhills.html">Greenhills</a></li>
+                        <li><a class="dropdown-item" href="fairview.html">Fairview</a></li>
+                        <li><a class="dropdown-item" href="sta_ana.html">Sta. Ana</a></li>
+                        <li><a class="dropdown-item" href="las_pinas.html">Las Piñas</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">
@@ -84,9 +110,16 @@
     </div>
 </nav>
 
-<br><br>
+<br>
 
 <!-- CONTENT -->
+
+<h1 class="text- text-center" style="color:rgb(2, 74, 132);"><strong>About Developers</strong></h1>
+<div class="image-container">
+<img style="border-radius: 20px; width: auto; height:400px;" src="https://visible-copper-cr367qsmwf.edgeone.app/unnamed.png">
+</div>
+
+
 <section id="leader">
   <h2>Leader: Wenzelvic Paragas</h2>
   <p><strong>Wenzelvic Paragas</strong>: Distributed tasks, handled work, and was a good leader overall.</p>
